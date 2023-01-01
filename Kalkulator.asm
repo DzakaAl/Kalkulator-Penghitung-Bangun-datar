@@ -2,7 +2,7 @@ org 100h
 
 jmp mulai
 
-msg :   db  "Kalkulator Penghitung Bangun Datar",0dh,0ah,"1-Luas Persegi",0dh,0ah,"2-Keliling Persegi",0dh,0ah,"3-Luas Persegi Panjang",0dh,0ah,"4-Keliling Persegi Panjang",0dh,0ah,'$'
+msg :   db  "Kalkulator Bangun Datar",0dh,0ah,"1-Luas Persegi",0dh,0ah,"2-Keliling Persegi",0dh,0ah,"3-Luas Persegi Panjang",0dh,0ah,"4-Keliling Persegi Panjang",0dh,0ah,'$'
 msg2:   db  0dh,0ah,"Masukkan Sisi : $"
 msg3:   db  0dh,0ah,"Masukkan Panjang : $"
 msg4:   db  0dh,0ah,"Masukkan Lebar : $"
@@ -24,12 +24,7 @@ mulai:  mov ah,9
         je LuasPersegiPanjang
         cmp al,34h
         je KelilingPersegiPanjang
-        cmp al,35h
-        je LuasSegitiga
-        cmp al,36h
-        je LuasLingkaran
-        cmp al,37h
-        je KelilingLingkaran
+        cmp al,35
         mov ah,09h
         mov dx, offset msg5
         int 21h
