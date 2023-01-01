@@ -2,7 +2,7 @@ org 100h
 
 jmp mulai
 
-msg :   db  "1-Luas Persegi",0dh,0ah,"2-Keliling Persegi",0dh,0ah,"3-Luas Persegi Panjang",0dh,0ah,"4-Keliling Persegi Panjang",0dh,0ah,'$'
+msg :   db  "Kalkulator Penghitung Bangun Datar",0dh,0ah,"1-Luas Persegi",0dh,0ah,"2-Keliling Persegi",0dh,0ah,"3-Luas Persegi Panjang",0dh,0ah,"4-Keliling Persegi Panjang",0dh,0ah,'$'
 msg2:   db  0dh,0ah,"Masukkan Sisi : $"
 msg3:   db  0dh,0ah,"Masukkan Panjang : $"
 msg4:   db  0dh,0ah,"Masukkan Lebar : $"
